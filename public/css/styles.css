@@ -1,0 +1,33 @@
+:root {
+    --AMARILLO: #EAC926;
+    AZUL: #03264C;
+    CELESTE: #1259c3;
+    GRIS-OSCURO: #666;
+    GRIS-CLARO: #ebebeb;
+    VERDE: #39b54a;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 12px;
+}
+
+/* Tamaños Tipográficos
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px */
+
+.header {
+    background-color: var(--AMARILLO);
+    width: 100%; 
+    padding: 15px 10px;
+}
+
+.header__img-logo {
+    width: 40%; 
+    height: auto; /* para mantener la proporción original de la imagen */
+}
