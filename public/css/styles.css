@@ -1,6 +1,6 @@
 :root {
     --AMARILLO: #EAC926;
-    AZUL: #03264C;
+    --AZUL: #03264C;
     CELESTE: #1259c3;
     GRIS-OSCURO: #666;
     GRIS-CLARO: #ebebeb;
@@ -21,13 +21,67 @@ Precios: 18px
 Descuentos: 16px
 Descripciones: 16px */
 
+/* HEADER */
 .header {
     background-color: var(--AMARILLO);
     width: 100%; 
-    padding: 15px 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .header__img-logo {
-    width: 40%; 
+    width: 100px; 
     height: auto; /* para mantener la proporción original de la imagen */
+    margin-left: 15px;
+}
+
+/* HEADER Seccion Buscar Productos */
+.header__sec-buscar-productos {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.header__sec-buscar-productos__btn-buscar {
+    display: block;
+}
+
+/* HEADER Seccion compra en cuotas */
+.header__sec-compra-en-cuotas {
+    text-align: center;
+}
+
+.header__sec-compra-en-cuotas__descripcion {
+    display: inline-block;
+    color: var(--AZUL);
+}
+
+/* HEADER Seccion lista opciones */
+.header__sec-lista-opciones__ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.header__sec-lista-opciones__ul__li__link {
+    text-decoration: none;
+    color: var(--AZUL);
+}
+
+/* HEADER Seccion lista opciones */
+.burger-menu{
+    background-color: #1259c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+
+/* Main Card product */
+.reducida {
+    width: 150px;
 }
