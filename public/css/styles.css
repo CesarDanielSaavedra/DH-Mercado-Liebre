@@ -1,7 +1,7 @@
 :root {
     --AMARILLO: #EAC926;
     --AZUL: #03264C;
-    CELESTE: #1259c3;
+    --CELESTE: #1259c3;
     --GRIS-OSCURO: #666;
     --GRIS-CLARO: #ebebeb;
     VERDE: #39b54a;
@@ -68,7 +68,7 @@ Descripciones: 16px */
 
 /* HEADER Seccion lista opciones */
 .burger-menu{
-    background-color: #1259c3;
+    background-color: var(--CELESTE);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,6 +109,26 @@ Descripciones: 16px */
 }
 
 .footer__sec__p {
+    color: var(--GRIS-OSCURO);
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+    width: 70%;
+    margin: auto;
+}
+
+.footer__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    margin: auto;
+    font-size: 2em;
+
+}
+
+.footer__sec__p__copy-right {
+    text-align: start;
     color: var(--GRIS-OSCURO);
     margin-block-start: 0%;
     margin-block-end: 0%;
