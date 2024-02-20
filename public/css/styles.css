@@ -60,8 +60,7 @@ Descripciones: 16px */
     display: none;
 }
 
-.header__sec-lista-opciones-izq,
-.header__sec-lista-opciones-der {
+.header__sec-lista-opciones {
     list-style-type: none;
     padding: 0px;
 }
@@ -76,7 +75,7 @@ Descripciones: 16px */
 }
 
 
-.burger-menu{
+.header__burger-menu{
     background-color: var(--CELESTE);
     display: flex;
     justify-content: center;
@@ -89,11 +88,17 @@ Descripciones: 16px */
     font-size: 20px;
 }
 
+/* Banner  */
+.home-banner__img {
+    width: 100vw;
+}
+
 
 /* Main Card product */
 .main {
     width: 90%;
     margin: auto;
+    margin-top: 10px;
     background-color: var(--GRIS-CLARO);
     padding: 10px 0;
 }
@@ -148,6 +153,7 @@ Descripciones: 16px */
     margin-bottom: 0px;
     color: var(--GRIS-OSCURO);
     font-size: 16px;
+    display: none;
 }
 
 /* FOOTER Seccion*/
@@ -199,10 +205,24 @@ Descripciones: 16px */
 
 /* Tablet */
 @media (min-width: 360px) {
+    .header__navbar {
+        display: block;
+    }
 
+    .header__burger-menu {
+        display: none;
+    }
+
+    .main__card-product__descripcion {
+        display: block;
+    }
+    .main__card-product {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
 }
 
 /* Desktop */
 @media (min-width: 768px) {
 
 }
+
