@@ -4,7 +4,7 @@
     --CELESTE: #1259c3;
     --GRIS-OSCURO: #666;
     --GRIS-CLARO: #ebebeb;
-    VERDE: #39b54a;
+    --VERDE: #39b54a;
 }
 
 * {
@@ -22,20 +22,20 @@ Descuentos: 16px
 Descripciones: 16px */
 
 /* HEADER */
-.header__nav {
+.header {
     background-color: var(--AMARILLO);
     width: 100%; 
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
+/* HEADER Barra superior */
 .header__img-logo {
     width: 100px; 
     height: auto; /* para mantener la proporción original de la imagen */
     margin-left: 15px;
 }
 
-/* HEADER Seccion Buscar Productos */
 .header__sec-buscar-productos {
     margin-top: 15px;
     margin-left: 15px;
@@ -45,9 +45,9 @@ Descripciones: 16px */
     display: block;
 }
 
-/* HEADER Seccion compra en cuotas */
 .header__sec-compra-en-cuotas {
     text-align: center;
+    padding: 5px;
 }
 
 .header__sec-compra-en-cuotas__descripcion {
@@ -55,18 +55,27 @@ Descripciones: 16px */
     color: var(--AZUL);
 }
 
-/* HEADER Seccion lista opciones */
-.header__sec-lista-opciones__ul {
-    list-style-type: none;
-    padding-left: 0px;
+/* HEADER nav bar Seccion lista opciones */
+.header__navbar {
+    display: none;
 }
 
-.header__sec-lista-opciones__ul__li__link {
+.header__sec-lista-opciones-izq,
+.header__sec-lista-opciones-der {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.header__sec-lista-opciones__li {
+    padding: 5px 0px;
+}
+
+.header__sec-lista-opciones__link {
     text-decoration: none;
     color: var(--AZUL);
 }
 
-/* HEADER Seccion lista opciones */
+
 .burger-menu{
     background-color: var(--CELESTE);
     display: flex;
@@ -83,12 +92,63 @@ Descripciones: 16px */
 
 /* Main Card product */
 .main {
+    width: 90%;
+    margin: auto;
     background-color: var(--GRIS-CLARO);
-}
-.reducida {
-    width: 150px;
+    padding: 10px 0;
 }
 
+.main__sec-name {
+    width: 90%;
+    margin: auto;
+    color: var(--GRIS-OSCURO);
+    font-size: 24px;
+}
+
+.main__card-product {
+    margin: 10px;
+    background-color: white;
+}
+
+.main__card-product__img {
+    width: 100%;
+    padding: 15px;
+}
+
+.main__card-product__info-conteiner {
+    border-top: 1px solid var(--GRIS-CLARO);
+    padding: 15px;
+}
+
+.main__card-product__icon-container {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--VERDE);
+    border-radius: 50%;
+    padding: 3px;
+    justify-content: start;
+    align-items: start;
+    color: var(--VERDE);
+}
+
+.main__card-product__precio {
+    font-size: 18px;
+    margin: 0;
+}
+
+.main__card-product__descuento {
+    font-size: 16px;
+    color: var(--VERDE);
+    margin: 0;
+}
+
+.main__card-product__descripcion {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: var(--GRIS-OSCURO);
+    font-size: 16px;
+}
 
 /* FOOTER Seccion*/
 .footer {
@@ -132,4 +192,17 @@ Descripciones: 16px */
     color: var(--GRIS-OSCURO);
     margin-block-start: 0%;
     margin-block-end: 0%;
+}
+
+
+/* MEDIAS QUERYS */
+
+/* Tablet */
+@media (min-width: 360px) {
+
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+
 }
