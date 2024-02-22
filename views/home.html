@@ -13,17 +13,30 @@
 </head>
 <body>
     <header class="header">
-            <div class="header__topbar">
-                <img src="/images/logo-mercado-liebre.svg" alt="logo" class="header__img-logo">
-
-                <section class="header__sec-buscar-productos">
-                    <input type="text" placeholder="Buscar productos, marcas">
-                    <button class="header__sec-buscar-productos__btn-buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </section>
-
-                <section class="header__sec-compra-en-cuotas">
-                    <i class="fa-solid fa-hand-holding-dollar" style="color: #03264C;"></i>
-                    <p>Comprá en cuotas y sin tarjeta de crédito</p>
+            <div class="header__top-bar" role="banner">
+                <div class="top-bar__sec-logo-serch">
+                    <img 
+                        src="/images/logo-mercado-liebre.svg" 
+                        alt="logo" 
+                        class="top-bar__img-logo"
+                    >
+    
+                    <section class="top-bar__sec-buscar-productos">
+                        <input 
+                            type="text" placeholder="Buscar productos, marcas..." 
+                            class="top-bar__sec-buscar-productos__input"
+                        >
+                        <button class="top-bar__sec-buscar-productos__btn-buscar">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </section>
+                </div>
+    
+                <section class="top-bar__sec-compra-en-cuotas">
+                    <p>
+                        <i class="fa-solid fa-hand-holding-dollar" style="color: #03264C;"></i>
+                          Comprá en cuotas y sin tarjeta de crédito
+                    </p>
                 </section>
             </div>
 

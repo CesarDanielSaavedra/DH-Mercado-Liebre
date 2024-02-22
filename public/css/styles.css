@@ -32,30 +32,51 @@ Descripciones: 16px */
 }
 
 /* HEADER Barra superior */
-.header__img-logo {
-    width: 100px; 
-    height: auto; /* para mantener la proporción original de la imagen */
-    margin-left: 15px;
+.top-bar__sec-logo-serch {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
 }
 
-.header__sec-buscar-productos {
-    margin-top: 15px;
-    margin-left: 15px;
-}
-
-.header__sec-buscar-productos__btn-buscar {
-    display: block;
-}
-
-.header__sec-compra-en-cuotas {
-    text-align: center;
+.top-bar__img-logo {
+    width: 50%; 
     padding: 5px;
 }
 
-.header__sec-compra-en-cuotas__descripcion {
-    display: inline-block;
-    color: var(--AZUL);
+.top-bar__sec-buscar-productos {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 50%;
+    padding: 5px;
+    border-radius: 5px;
 }
+
+.top-bar__sec-buscar-productos__input {
+    border-style: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 80%;
+    padding: 5px;
+}
+
+.top-bar__sec-buscar-productos__btn-buscar {
+    background-color: white;
+    border-style: none;
+    border-left: 1px solid var(--GRIS-OSCURO);
+    color: var(--GRIS-OSCURO);
+    padding: 2px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 20%
+}
+
+.top-bar__sec-compra-en-cuotas {
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+
 
 /* HEADER nav bar Seccion lista opciones */
 .header__navbar {
@@ -65,10 +86,13 @@ Descripciones: 16px */
 .header__sec-lista-opciones {
     list-style-type: none;
     padding: 0px;
+    display: flex;
+    justify-content: center;
 }
 
 .header__sec-lista-opciones__li {
     padding: 5px 0px;
+    margin: 5px ;
 }
 
 .header__sec-lista-opciones__link {
@@ -230,13 +254,25 @@ Descripciones: 16px */
 
 /* Tablet */
 @media (min-width: 360px) {
-    .header__navbar {
-        display: block;
+    .header__top-bar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .top-bar__sec-logo-serch {
+        width: 60%;   
+        margin: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .top-bar__sec-compra-en-cuotas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        margin-bottom: 0px;
     }
 
-    .header__burger-menu {
-        display: none;
-    }
 
     .main__card-product__descripcion {
         display: block;
@@ -245,6 +281,21 @@ Descripciones: 16px */
     .main__card-product {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 45%;
+    }
+    
+}
+
+/* BreackPoint entre Tablet y Desktop */
+@media (min-width: 600px) {
+    .header {
+        padding-bottom: 5px;
+    }
+    .header__burger-menu {
+        display: none;
+    }
+    .header__navbar {
+        display: flex;
+        justify-content: space-between;
     }
 }
 
