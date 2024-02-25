@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Doc</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header class="header">
+            <div class="header__top-bar" role="banner">
+                <a href="/" class="top-bar__sec-logo-serch__register">
+                    <img 
+                        src="/images/logo-mercado-liebre.svg" 
+                        alt="logo" 
+                        class="top-bar__img-logo"
+                    >
+                </a>
+            </div>
+    </header>
+
+    <main class="main">
+        <form action="#" method="post">
+            <input type="text" name="nombreApellido" pattern="[A-Za-z]{2,}" title="Este campo debe contener mas de 2 letras" placeholder="Nombre y Apellido" required>
+
+            <input type="text" name="nombreUsuario" pattern="[A-Za-z]{2,}" title="Este campo debe contener mas de 2 letras" placeholder="Nombre de Usuario" required>
+
+            <input type="email" name="Email" placeholder="ejemplo@email.com" required>
+
+            <div>
+                <label> Ingrese su fecha de nacimiento</label>
+                <input type="date" name="fechaNacimiento" min="1924-01-01" max="2020-12-31" required>
+            </div>
+
+            <input type="text" name="domicilio" placeholder="Domicilio" required>
+
+            <div>
+                <label>Perfil de Usuario:</label>
+                <input type="radio" name="perfil" value="comprador" required>
+                <label for="comprador">Comprador</label>
+                <input type="radio" name="perfil" value="vendedor" required>
+                <label for="vendedor">Vendedor</label>
+            </div>
+
+            <div>
+                <label>Interes:</label>
+                <input type="checkbox" name="categoriaInteres" value="electro" required>
+                <label for="electro">Electro</label>
+                <input type="checkbox" name="categoriaInteres" value="moda" required>
+                <label for="moda">Moda</label>
+                <input type="checkbox" name="categoriaInteres" value="hogar" required>
+                <label for="hogar">Hogar</label>
+                <input type="checkbox" name="categoriaInteres" value="jugueteria" required>
+                <label for="jugueteria">Juguetería</label>
+                <input type="checkbox" name="categoriaInteres" value="vidaSana" required>
+                <label for="vidaSana">Vida sana</label>
+            </div>
+
+            <div>
+                <label>Cargar Imagen de Usuario (jpg, png):</label>
+                <input type="file" name="imagen" accept=".jpg, .png" required>
+            </div>
+
+            <div>
+                <label> Ingrese su contraseña</label>
+                <input type="password" name="password" required>
+                <label> Confirmar contraseña</label>
+                <input type="password" name="password" required>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+    </main>
+
+</body>
+</html>
