@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Doc</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header class="header">
+            <div class="header__top-bar" role="banner">
+                <a href="/" class="top-bar__sec-logo-serch__register">
+                    <img 
+                        src="/images/logo-mercado-liebre.svg" 
+                        alt="logo" 
+                        class="top-bar__img-logo"
+                    >
+                </a>
+            </div>
+    </header>
+
+    <main class="main_register">
+        <h4 class="main__sec-name"> Crea tu cuenta </h4>
+        <form action="#" method="post" class="main__form">
+            <input 
+                type="text" name="nombreApellido" 
+                pattern="[A-Za-z]{2,}" 
+                title="Este campo debe contener mas de 2 letras" 
+                placeholder="Nombre y Apellido"
+                class="form__input form__input-text" 
+                required
+            >
+
+            <input 
+                type="text" 
+                name="nombreUsuario" 
+                pattern="[A-Za-z]{2,}" 
+                title="Este campo debe contener mas de 2 letras" 
+                placeholder="Nombre de Usuario" 
+                class="form__input form__input-text" 
+                required
+            >
+
+            <button type="submit" class="form__btn">Enviar</button>
+
+        </form>
+
+    </main>
+
+</body>
+</html>
