@@ -250,6 +250,60 @@ Descripciones: 16px */
 }
 
 
+/* Register */
+.main_register {
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    background-color: var(--GRIS-CLARO);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.main__form { 
+    width: 90%;
+    margin: auto;
+}
+
+.form__input {
+    display: block;
+    margin: 10px 0;
+}
+.form__input-text {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form__label {
+    display: block;
+    margin: 10px 0;
+    color: var(--GRIS-OSCURO);
+    font-size: 14px;
+}
+
+.form__input__option {
+    margin-left: 0px;
+}
+.form__input__option-load-file {
+    width: 100%;
+}
+
+.form__btn {
+    background-color: var(--VERDE);
+    color: var(--GRIS-CLARO);
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form_sep {
+    margin: 10px 0;
+}
+
 /* MEDIAS QUERYS */
 
 /* Tablet */
