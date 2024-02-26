@@ -304,6 +304,29 @@ Descripciones: 16px */
     margin: 10px 0;
 }
 
+
+/* LOGIN */
+.login__form__input {
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form__btn {
+    background-color: var(--CELESTE);
+    color: var(--GRIS-CLARO);
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
 /* MEDIAS QUERYS */
 
 /* Tablet */

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primer Doc</title>
+    <title>Mercado Liebre</title>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,24 +25,24 @@
     </header>
 
     <main class="main_register">
-        <h4 class="main__sec-name"> Crea tu cuenta </h4>
+        <h4 class="main__sec-name"> Ingresa a tu cuenta </h4>
         <form action="#" method="post" class="main__form">
             <input 
                 type="text" name="nombreApellido" 
                 pattern="[A-Za-z]{2,}" 
                 title="Este campo debe contener mas de 2 letras" 
-                placeholder="Nombre y Apellido"
-                class="form__input form__input-text" 
+                placeholder="Nombre de usuario"
+                class="login__form__input" 
                 required
             >
 
             <input 
-                type="text" 
-                name="nombreUsuario" 
+                type="password" 
+                name="contraseña" 
                 pattern="[A-Za-z]{2,}" 
                 title="Este campo debe contener mas de 2 letras" 
-                placeholder="Nombre de Usuario" 
-                class="form__input form__input-text" 
+                placeholder="contraseña" 
+                class="login__form__input" 
                 required
             >
 
