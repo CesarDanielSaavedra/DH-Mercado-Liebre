@@ -36,10 +36,12 @@ Descripciones: 16px */
     display: flex;
     padding: 10px;
     margin: 10px;
+    justify-content: space-between;
 }
 
 .top-bar__img-logo {
     width: 50%; 
+    max-width: 200px;
     padding: 5px;
 }
 
@@ -355,12 +357,12 @@ Descripciones: 16px */
     .top-bar__sec-logo-serch {
         width: 60%;   
         margin: 0px;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
     .top-bar__sec-compra-en-cuotas{
         display: flex;
-        justify-content: center;
+        justify-content: end;
         align-items: center;
         width: 40%;
         margin-bottom: 0px;
